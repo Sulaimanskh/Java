@@ -25,7 +25,8 @@ public class Main {
                 int month = input.nextInt();
  System.out.println("Enter your day:");
                 int day = input.nextInt();
-
+  System.out.println("Enter your community statues :");
+              String satuescom=input.next();
                 System.out.println("Enter your salary:");
                 float salary = input.nextFloat();
 
@@ -36,9 +37,10 @@ public class Main {
                 int startMonth = input.nextInt();
  System.out.println("Enter your day:");
                 int startDay = input.nextInt();
-
+System.out.println("Enter your work place:");
+                String workplace = input.next();
                 // إنشاء كائن موظف وإرسال البيانات للمُنشئ
-                Employee emp = new Employee(name, gender, year, month, day, salary, startYear, startMonth, startDay);
+                Employee emp = new Employee(name, gender, year, month, day, satuescom, salary, startYear, startMonth, startDay, workplace);
                 
                 System.out.println("\n--- Employee Information ---");
                 emp.printInfo();
@@ -58,6 +60,8 @@ public class Main {
                 int month = input.nextInt();
  System.out.println("Enter your day:");
                 int day = input.nextInt();
+ System.out.println("Enter your community statues :");
+              String satuescom=input.next();
 
                 System.out.println("Enter your university:");
                 String university = input.next();
@@ -69,7 +73,7 @@ public class Main {
                 String department = input.next();
 
                 // إنشاء كائن طالب وإرسال البيانات للمُنشئ
-                Student std = new Student(name, gender, year, month, day, university, collage, department);
+                Student std = new Student(name, gender, year, month, day, satuescom, university, collage, department);
                 
                 System.out.println("\n--- Student Information ---");
                 std.printInfo();
